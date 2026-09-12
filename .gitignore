@@ -34,3 +34,39 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Node.js (зависимости и логи)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Архивы и файлы сборки React Native
+.expo/
+.metro/
+dist/
+
+# Android-специфичные файлы
+android/app/build/
+android/.gradle/
+android/local.properties
+android/generated/
+*.iml
+.idea/
+
+# iOS-специфичные файлы
+ios/build/
+ios/DerivedData/
+ios/Pods/
+ios/.xcode.env.local
+*.xcworkspace
+*.xcuserstate
+*.lock
+
+# Конфиденциальные данные и ключи (ВАЖНО)
+*.keystore
+*.jks
+google-services.json
+GoogleService-Info.plist
+
+# Операционная система
+Thumbs.db
