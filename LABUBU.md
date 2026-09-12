@@ -153,3 +153,37 @@ npx expo start
     Сканируйте этот QR-код, чтобы открыть приложение на устройстве. На Android используйте опцию Expo Go > Scan QR-кода. На iOS используйте приложение камеры по умолчанию.
     Чтобы запустить веб-приложение, нажмите W В терминале. Он откроет веб-приложение в веб-браузере по умолчанию.
 
+Редактировать индексный экран
+
+The src/app/index.tsx файл определяет текст, отображаемый на экране приложения. Это точка входа нашего приложения и выполняет, когда сервер разработки начинается. Он использует основные компоненты React Native, такие как <View> и <Text> для отображения фона и текста.
+
+Стили, применяемые к этим компонентам, используют объекты JavaScript, а не CSS, который используется в Интернете. Тем не менее, многие свойства будут выглядеть знакомыми, если вы ранее использовали CSS в Интернете. Большинство реагированных народные компоненты принимают style реквизит, который принимает объект JavaScript в качестве его значения. Для получения более подробной информации см. Стиль в React Native.
+
+Давайте изменим экран src/app/index.tsx:
+
+    Импорт StyleSheet от react-native и создать a styles Возражает, чтобы определить наши пользовательские стили.
+    Add a styles.container.backgroundColor собственность для <View> с ценностью #25292e. Это меняет цвет фона.
+    Replace the default value of <Text> with "Home screen".
+    Add a styles.text.color собственность для <Text> с ценностью #fff (white) to change the text color.
+
+import { Text, View,  StyleSheet } from 'react-native';
+
+export default function Index() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Home screen</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#25292e',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    color: '#fff',
+  },
+});
