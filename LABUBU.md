@@ -86,7 +86,6 @@ macOS, Linux или Windows (с PowerShell и WSL2) и открытым окно
 
 В этом руководстве предполагается, что вы знакомы с TypeScript и React. Если нет, ознакомьтесь с руководством по TypeScript (TypeScript Handbook) и официальным руководством по React.
 
-1
 # Инициализация нового приложения Expo
 
 Для инициализации нового приложения Expo мы будем использовать `create-expo-app`. Это инструмент командной строки для создания новых проектов React Native. Выполните следующую команду в терминале:
@@ -108,7 +107,6 @@ cd StickerSmash
     Автоматически настроен для запуска проекта на нескольких платформах: Android, iOS и в вебе
     TypeScript настроен по умолчанию
 
-2
 # Загрузка ресурсов
 Скачать архив с ресурсами
 
@@ -133,7 +131,6 @@ npm run reset-project
 
 reset-project script resets the src/app directory structure in a project and moves the previous boilerplate files from the project's src directory to another sub-directory called example. We can delete it since it is not part of our main app's structure.
 
-4
 # Запуск приложения на мобильном и веб-сайте
 
 В каталоге проекта запустите следующую команду для запуска сервера разработки с терминала:
