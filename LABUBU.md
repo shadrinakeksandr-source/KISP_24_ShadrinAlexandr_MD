@@ -157,26 +157,26 @@ The src/app/index.tsx файл определяет текст, отобража
     Replace the default value of <Text> with "Home screen".
     Add a styles.text.color собственность для <Text> с ценностью #fff (white) to change the text color.
 
-`import { Text, View,  StyleSheet } from 'react-native';
+`import { Text, View,  StyleSheet } from 'react-native';`
 
-export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Home screen</Text>
-    </View>
-  );
-}
+`export default function Index() {`
+`  return (`
+`    <View style={styles.container}>`
+`      <Text style={styles.text}>Home screen</Text>`
+`    </View>`
+`  );`
+`}`
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#25292e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    color: '#fff',
-  },
-});`
+`const styles = StyleSheet.create({`
+`  container: {`
+`    flex: 1,`
+`    backgroundColor: '#25292e',`
+`    alignItems: 'center',`
+`    justifyContent: 'center',`
+`  },`
+`  text: {`
+`    color: '#fff',`
+`  },`
+`});`
 
 Как только вы сохраняете свои изменения, они отправляются и применяются к запущенным приложениям, подключенным к серверу разработки:
