@@ -31,7 +31,7 @@
 ## Как пользоваться этим руководством
 
 Мы верим в обучение на практике, поэтому в данном руководстве основное внимание уделяется действиям, а не теории. Вы сможете пройти весь путь создания приложения, написав его код с нуля. На протяжении всего руководства важный код или код, изменившийся по сравнению с предыдущими примерами, будет выделен зеленым цветом. Вы можете навести курсор на выделенные фрагменты (на компьютере) или нажать на них (на мобильном устройстве), чтобы узнать подробности об изменениях. Например, код, выделенный в приведенном ниже фрагменте, сопровождается пояснением своего назначения:
-import { StyleSheet, Text, View } from 'react-native';
+`import { StyleSheet, Text, View } from 'react-native';
 
 export default function Index() {
   return (
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+});`
 
 ## Создайте свое первое приложение
 
@@ -86,10 +86,10 @@ macOS, Linux или Windows (с PowerShell и WSL2) и открытым окно
 
 Для инициализации нового приложения Expo мы будем использовать `create-expo-app`. Это инструмент командной строки для создания новых проектов React Native. Выполните следующую команду в терминале:
 Терминал
-npm
-yarn
-pnpm
-bun
+`npm`
+`yarn`
+`pnpm`
+`bun`
 npx create-expo-app@latest StickerSmash
 Выберите версию Expo SDK > SDK 57
 cd StickerSmash
@@ -115,10 +115,10 @@ cd StickerSmash
 
 В этом уроке мы создадим наше приложение с нуля и поймем основы добавления файловой навигации. Давайте запустим reset-project скрипт для удаления кода шаблона:
 Терминал
-npm
-пряжа
-pnpm
-булочка
+`npm`
+`пряжа`
+`pnpm`
+`булочка`
 
 npm run reset-project
 
@@ -131,10 +131,10 @@ reset-project script resets the src/app directory structure in a project and mov
 
 В каталоге проекта запустите следующую команду для запуска сервера разработки с терминала:
 Терминал
-npm
-пряжа
-pnpm
-булочка
+`npm`
+`пряжа`
+`pnpm`
+`булочка`
 
 npx expo start
 
@@ -157,7 +157,7 @@ The src/app/index.tsx файл определяет текст, отобража
     Replace the default value of <Text> with "Home screen".
     Add a styles.text.color собственность для <Text> с ценностью #fff (white) to change the text color.
 
-import { Text, View,  StyleSheet } from 'react-native';
+`import { Text, View,  StyleSheet } from 'react-native';
 
 export default function Index() {
   return (
@@ -177,6 +177,6 @@ const styles = StyleSheet.create({
   text: {
     color: '#fff',
   },
-});
+});`
 
 Как только вы сохраняете свои изменения, они отправляются и применяются к запущенным приложениям, подключенным к серверу разработки:
