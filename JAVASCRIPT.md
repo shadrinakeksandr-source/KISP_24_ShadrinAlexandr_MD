@@ -1045,25 +1045,25 @@ alert($ + _); // 3
 Другими словами, скобки необходимы для определения типа значения, которое получилось в результате выполнения выражения в них.
 
 Вызов "typeof" x возвращает строку с именем типа:
-```
-"typeof undefined" // "undefined"
 
-"typeof 0" // "number"
+typeof undefined // "undefined"
 
-"typeof 10n" // "bigint"
+typeof 0 // "number"
 
-"typeof true" // "boolean"
+typeof 10n // "bigint"
 
-"typeof "foo"" // "string"
+typeof true // "boolean"
 
-"typeof Symbol("id")" // "symbol"
+typeof "foo" // "string"
+
+typeof Symbol("id") // "symbol"
 
 typeof Math // "object"  (1)
 
 typeof null // "object"  (2)
 
 typeof alert // "function"  (3)
-```
+
 Последние три строки нуждаются в пояснении:
 
     Math — это встроенный объект, который предоставляет математические операции и константы. Мы рассмотрим его подробнее в главе Числа. Здесь он служит лишь примером объекта.
