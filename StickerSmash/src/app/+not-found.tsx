@@ -4,10 +4,10 @@ import { Link, Stack } from 'expo-router';
 export default function NotFoundScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: 'ты что мне изменяешь' }} />
+      <Stack.Screen options={{ title: 'ты куда лезешь головой тронулся' }} />
       <View style={styles.container}>
         <Link href="/" style={styles.button}>
-          кто эта стерва
+          Иди проспись
         </Link>
       </View>
     </>
